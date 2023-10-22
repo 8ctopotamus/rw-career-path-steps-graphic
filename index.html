@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- copy everything between these comments into Keap -->
+
+  <style>
+    #career-path-steps {
+      display: flex;
+      margin: 50px;
+    }
+    .circle {
+      height: 100px;
+      width: 100px;
+      border-radius: 100px;
+      background: green;
+      display: grid;
+      place-items: center;
+      color: white;
+      text-decoration: none;
+      z-index: 1;
+      position: relative;
+    }
+
+    .step {
+      background: blue;
+      width: 100px;
+      height: 10px;
+      position: relative;
+    }
+
+    .step::before {
+      content: '';
+      display: inline-block;
+      background: #f15757;
+      width: 100px;
+      height: 20px;
+      transform: skewX(-40deg);
+      position: absolute;
+      top: -20px;
+      left: 8px;
+    }
+
+    .step::after {
+      content: '';
+      display: inline-block;
+      background: #9e1515;
+      width: 16px;
+      height: 10px;
+      transform: skewY(-50deg);
+      position: absolute;
+      top: -10px;
+      left: 100%;
+    }
+  </style>
+
+  <div id="career-path-steps"></div>
+
+  <script>
+    const stepsContainer = document.getElementById("career-path-steps");
+
+    const stepData = [
+      {
+        label: 'Admin',
+        color: '',
+      },
+      {
+        label: 'Test',
+        color: '',
+      }
+    ];
+
+    const createStep = ({ label, color }) => {
+      const stepLink = document.createElement('a')
+      const circleDiv = document.createElement('div')
+      const rect3dDiv = document.createElement('div')
+
+      stepLink.href = `#${label.toLowerCase().replaceAll(' ', '-')}`
+      stepLink.classList.add('step-link')
+      circleDiv.innerText = label
+      circleDiv.classList.add('circle')
+      rect3dDiv.classList.add('step')
+
+      stepLink.appendChild(circleDiv)
+      stepLink.appendChild(rect3dDiv)
+      stepsContainer.appendChild(stepLink)
+    }
+
+    stepData.forEach(createStep);
+  </script>
+
+
+
+
+
+
+
+
+  <!-- END copy everything between these comments into Keap -->
+
+  <!-- experimental HTML -->
+  <!-- <div id="career-path-steps">
+    <a href="#admin" class="step-link">
+      <div class="circle">
+        Admin
+      </div>
+      <div class="step"></div>
+    </a>
+    <a href="#" class="step-link">
+      <div class="circle">
+        Admin
+      </div>
+      <div class="step"></div>
+    </a>
+    <a href="#" class="step-link">
+      <div class="circle">
+        Admin
+      </div>
+      <div class="step"></div>
+    </a>
+  </div> -->
+
+
+
+</body>
+
+</html>
