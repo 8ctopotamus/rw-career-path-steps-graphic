@@ -1,15 +1,17 @@
-[
-	{
-		"label": "Admin",
-		"startColor": "blue",
-		"endColor": "green"
-	},
-	{                      										
-		"label": "Admin", 
-		"startColor": "blue", 
-		"endColor": "green"  
- 	}
-]	
+{ 
+	"steps": [
+		{
+			"label": "Admin",
+			"startColor": "blue",
+			"endColor": "green"
+		},
+		{                      										
+			"label": "Admin", 
+			"startColor": "blue", 
+			"endColor": "green"  
+		}
+	]	
+}
  
  
  

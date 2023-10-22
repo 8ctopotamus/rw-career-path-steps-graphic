@@ -9,8 +9,7 @@ module.exports = {
 			output: './dist/[name].html',
 			data: require('./src/data/rw.json'),
 			onBeforeRender: function (Handlebars, data, filename) { 
-				console.log('running...', data, filename)
-				 
+				console.log('running...', data, filename)				 
 			},
 		}),
 	],
