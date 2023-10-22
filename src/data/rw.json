@@ -2,13 +2,33 @@
 	"steps": [
 		{
 			"label": "Admin",
-			"startColor": "blue",
-			"endColor": "green"
+			"startColor": "#7698AB",
+			"endColor": "#90B9CF"
 		},
 		{                      										
-			"label": "Admin", 
-			"startColor": "blue", 
-			"endColor": "green"  
+			"label": "Client Service", 
+			"startColor": "#4D9FB2", 
+			"endColor": "#78C3DA"  
+		},
+		{                      										
+			"label": "Junior Advisor", 
+			"startColor": "#4B8AC4", 
+			"endColor": "#71ADEB"  
+		},
+		{                      										
+			"label": "Service Advisor", 
+			"startColor": "#1A7096", 
+			"endColor": "#379DD2"  
+		},
+		{                      										
+			"label": "Lead Advisor", 
+			"startColor": "#007AA5", 
+			"endColor": "#0095D6"  
+		},
+		{                      										
+			"label": "Practicing Advisor", 
+			"startColor": "#007689", 
+			"endColor": "#0191B1"  
 		}
 	]	
 }

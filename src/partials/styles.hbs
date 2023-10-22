@@ -1,50 +1,61 @@
-  <style>
-    .career-path-steps {
-      display: flex;
-      margin: 50px;
-    }
-    
-		.circle {
-      height: 100px;
-      width: 100px;
-      border-radius: 100px;
-      background: green;
-      display: grid;
-      place-items: center;
-      color: white;
-      text-decoration: none;
-      z-index: 1;
-      position: relative;
-    }
+<style>
+  .career-path-steps {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 50px auto;
+    gap: 10px;
+  }
 
-    .step {
-      background: blue;
-      width: 100px;
-      height: 10px;
-      position: relative;
-    }
+  .step-link {
+    display: block;
+  }
 
-    .step::before {
-      content: '';
-      display: inline-block;
-      background: #f15757;
-      width: 100px;
-      height: 20px;
-      transform: skewX(-40deg);
-      position: absolute;
-      top: -20px;
-      left: 8px;
-    }
+  .circle {
+    display: grid;
+    background: green;
+    box-shadow: -3px 6px 3px rgba(0,0,0,.5);
+    place-items: center;
+    color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    word-wrap: break-word;
+    z-index: 1;
+  }
 
-    .step::after {
-      content: '';
-      display: inline-block;
-      background: #9e1515;
-      width: 16px;
-      height: 10px;
-      transform: skewY(-50deg);
-      position: absolute;
-      top: -10px;
-      left: 100%;
-    }
-  </style>
+  .step {
+    background: #999;
+    width: 100px;
+    height: 10px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .step::before {
+    content: '';
+    display: inline-block;
+    background: #ddd;
+    width: 100px;
+    height: 20px;
+    transform: skewX(-40deg);
+    position: absolute;
+    top: -20px;
+    left: 8px;
+  }
+
+  .step::after {
+    content: '';
+    display: inline-block;
+    background: #bbb;
+    width: 16px;
+    height: 10px;
+    transform: skewY(-50deg);
+    position: absolute;
+    top: -10px;
+    left: 100%;
+  }
+</style>
