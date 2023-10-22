@@ -1,21 +1,15 @@
 {
-  "name": "rw-career-path-steps-graphic",
-  "version": "1.0.0",
-  "description": "## RW Team:",
-  "main": "webpack.config.js",
+  "name": "rw-career-path-graphic",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "handlebars-webpack-plugin": "^2.2.1",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1",
-    "wepack-cli": "^0.0.1-security"
+    "vite": "^4.4.5",
+    "vite-plugin-handlebars": "^1.6.0"
   }
 }
