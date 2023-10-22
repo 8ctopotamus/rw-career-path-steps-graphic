@@ -8,8 +8,12 @@ module.exports = {
 			entry: './src/*.hbs',
 			output: './dist/[name].html',
 			data: require('./src/data/rw.json'),
+			partials: [
+				"./src/partials/*.hbs",
+			],
 			onBeforeRender: function (Handlebars, data, filename) { 
-				console.log('running...', data, filename)				 
+				console.log(filename)
+				console.log(data)				 
 			},
 		}),
 	],
