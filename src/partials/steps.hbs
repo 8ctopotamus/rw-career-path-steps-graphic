@@ -1,6 +1,6 @@
 <div class="career-path-steps">
 	{{#each steps}}
-		<a href="#admin" class="step-link" style="margin-bottom: {{@index}}px;">
+		<a href="#{{slugifyLabel label}}" class="step-link" style="margin-bottom: {{getStepMargin @index}}px;">
 			<div 
 				class="circle" 
 				style="background: radial-gradient(circle at bottom left, {{startColor}}, {{endColor}});"
