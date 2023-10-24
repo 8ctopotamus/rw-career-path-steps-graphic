@@ -9,18 +9,192 @@
 
 <body>
 
-<h1>Career Path</h1>
+<style>
+  .career-path-steps {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 50px auto;
+  }
+
+  .step-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    margin-left: -30px; 
+  }
+
+  .circle {
+    display: grid;
+    background: green;
+    box-shadow: 3px 6px 3px rgba(0,0,0,.5);
+    border-radius: 100px;
+    color: white;
+    height: 75px;
+    width: 75px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    place-items: center;
+    transition: all 180ms ease-out;
+    transform: translateX(28px);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+    word-wrap: break-word;
+    z-index: 1;
+  }
+
+  .step-link:hover .circle {
+    transform: translateX(28px) scale(1.1);
+  }
+
+  .step {
+    background: #bbb;
+    width: 115px;
+    height: 10px;
+    position: relative;
+    margin-top: 12px;
+  }
+
+  .step::before {
+    content: '';
+    display: inline-block;
+    background: #ddd;
+    width: 115px;
+    height: 20px;
+    transform: skewX(-40deg);
+    position: absolute;
+    top: -20px;
+    left: 8px;
+  }
+
+  .step::after {
+    content: '';
+    display: inline-block;
+    background: #999;
+    width: 16px;
+    height: 10px;
+    transform: skewY(-50deg);
+    position: absolute;
+    top: -10px;
+    left: 100%;
+  }
+</style>
+<h1>Advisor Career Path</h1>
 
 <div class="career-path-steps">
-		<a href="#admin" class="step-link">
-			<div class="circle">
+		<a href="#admin" class="step-link" style="margin-bottom: 0px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #7698AB, #90B9CF);"
+			>
 				Admin
 			</div>
 			<div class="step"></div>
 		</a>
-		<a href="#admin" class="step-link">
-			<div class="circle">
+		<a href="#client-service" class="step-link" style="margin-bottom: 40px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #4D9FB2, #78C3DA);"
+			>
+				Client Service
+			</div>
+			<div class="step"></div>
+		</a>
+		<a href="#junior-advisor" class="step-link" style="margin-bottom: 80px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #4B8AC4, #71ADEB);"
+			>
+				Junior Advisor
+			</div>
+			<div class="step"></div>
+		</a>
+		<a href="#service-advisor" class="step-link" style="margin-bottom: 120px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #1A7096, #379DD2);"
+			>
+				Service Advisor
+			</div>
+			<div class="step"></div>
+		</a>
+		<a href="#lead-advisor" class="step-link" style="margin-bottom: 160px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #007AA5, #0095D6);"
+			>
+				Lead Advisor
+			</div>
+			<div class="step"></div>
+		</a>
+		<a href="#practicing-advisor" class="step-link" style="margin-bottom: 200px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #007689, #0191B1);"
+			>
+				Practicing Advisor
+			</div>
+			<div class="step"></div>
+		</a>
+</div>
+
+
+<h1>Insurance Career Path</h1>
+
+<div class="career-path-steps">
+		<a href="#admin" class="step-link" style="margin-bottom: 0px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #7698AB, #90B9CF);"
+			>
 				Admin
+			</div>
+			<div class="step"></div>
+		</a>
+		<a href="#client-service" class="step-link" style="margin-bottom: 40px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #4D9FB2, #78C3DA);"
+			>
+				Client Service
+			</div>
+			<div class="step"></div>
+		</a>
+		<a href="#junior-advisor" class="step-link" style="margin-bottom: 80px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #4B8AC4, #71ADEB);"
+			>
+				Junior Advisor
+			</div>
+			<div class="step"></div>
+		</a>
+		<a href="#service-advisor" class="step-link" style="margin-bottom: 120px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #1A7096, #379DD2);"
+			>
+				Service Advisor
+			</div>
+			<div class="step"></div>
+		</a>
+		<a href="#lead-advisor" class="step-link" style="margin-bottom: 160px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #007AA5, #0095D6);"
+			>
+				Lead Advisor
+			</div>
+			<div class="step"></div>
+		</a>
+		<a href="#practicing-advisor" class="step-link" style="margin-bottom: 200px;">
+			<div 
+				class="circle" 
+				style="background: radial-gradient(circle at bottom left, #007689, #0191B1);"
+			>
+				Practicing Advisor
 			</div>
 			<div class="step"></div>
 		</a>
