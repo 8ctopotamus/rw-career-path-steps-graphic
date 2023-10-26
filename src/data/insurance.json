@@ -1,0 +1,24 @@
+{ 
+	"steps": [
+		{
+			"label": "Service Support",
+			"startColor": "#7698AB",
+			"endColor": "#90B9CF"
+		},
+		{                      										
+			"label": "Service Agent", 
+			"startColor": "#4D9FB2", 
+			"endColor": "#78C3DA"  
+		},
+		{                      										
+			"label": "Lead Agent", 
+			"startColor": "#4B8AC4", 
+			"endColor": "#71ADEB"  
+		}
+	]	
+}
+ 
+ 
+ 
+ 
+ 
