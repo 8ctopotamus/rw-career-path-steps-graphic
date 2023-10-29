@@ -3,13 +3,18 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 50px auto;
+    width: 100%;
+    max-width: 520px;
   }
 
   .step-link {
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     text-decoration: none;
     margin-left: -30px; 
   }
@@ -68,5 +73,9 @@
     position: absolute;
     top: -10px;
     left: 100%;
+  }
+
+  @media (max-width: 767px) {
+
   }
 </style>
