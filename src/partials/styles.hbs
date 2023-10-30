@@ -5,18 +5,20 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 50px auto;
-    width: 100%;
     max-width: 520px;
+    overflow: hidden;
+    width: 100%;
   }
 
   .step-link {
     flex-grow: 1;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     text-decoration: none;
-    margin-left: -30px; 
+    margin-left: -30px;
   }
 
   .circle {
@@ -32,7 +34,7 @@
     position: relative;
     place-items: center;
     transition: all 180ms ease-out;
-    transform: translateX(28px);
+    transform: translateX(10px);
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0,0,0,.75);
     word-wrap: break-word;
@@ -40,7 +42,7 @@
   }
 
   .step-link:hover .circle {
-    transform: translateX(28px) scale(1.1);
+    transform: translateX(10px) scale(1.1);
   }
 
   .step {
@@ -76,6 +78,9 @@
   }
 
   @media (max-width: 767px) {
-
+    .career-path-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 </style>
