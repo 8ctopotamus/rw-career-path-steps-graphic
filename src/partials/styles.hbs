@@ -3,10 +3,8 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    flex-wrap: wrap;
     margin: 50px auto;
     max-width: 520px;
-    overflow: hidden;
     width: 100%;
   }
 
@@ -16,9 +14,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    text-decoration: none;
+    text-decoration: none !important;
     margin-left: -30px;
+    font-family: 'Abhaya Libre', serif;
   }
 
   .circle {
@@ -29,14 +27,15 @@
     color: white;
     height: 75px;
     width: 75px;
-    font-size: 14px;
+    line-height: 18px;
+    font-size: 16px;
     font-weight: bold;
     position: relative;
     place-items: center;
     transition: all 180ms ease-out;
     transform: translateX(10px);
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+    text-shadow: 2px 1.25px 1px rgba(0,0,0,.6);
     word-wrap: break-word;
     z-index: 1;
   }
@@ -78,9 +77,19 @@
   }
 
   @media (max-width: 767px) {
-    .career-path-steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    .circle {
+      height: 40px;
+      width: 40px;
+      font-size: 8px;
+      line-height: initial;
     }
+
+    .step {
+      width: 50px;
+    }
+
+    .step::before {
+      width: 50px;
+    }    
   }
 </style>

@@ -4,6 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&display=swap" rel="stylesheet"> 
+
   <title>Document</title>
 </head>
 
@@ -14,20 +20,20 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    flex-wrap: wrap;
     margin: 50px auto;
-    width: 100%;
     max-width: 520px;
+    width: 100%;
   }
 
   .step-link {
     flex-grow: 1;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    text-decoration: none;
-    margin-left: -30px; 
+    text-decoration: none !important;
+    margin-left: -30px;
+    font-family: 'Abhaya Libre', serif;
   }
 
   .circle {
@@ -38,20 +44,21 @@
     color: white;
     height: 75px;
     width: 75px;
-    font-size: 14px;
+    line-height: 18px;
+    font-size: 16px;
     font-weight: bold;
     position: relative;
     place-items: center;
     transition: all 180ms ease-out;
-    transform: translateX(28px);
+    transform: translateX(10px);
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+    text-shadow: 2px 1.25px 1px rgba(0,0,0,.6);
     word-wrap: break-word;
     z-index: 1;
   }
 
   .step-link:hover .circle {
-    transform: translateX(28px) scale(1.1);
+    transform: translateX(10px) scale(1.1);
   }
 
   .step {
@@ -87,7 +94,19 @@
   }
 
   @media (max-width: 767px) {
+    .circle {
+      height: 40px;
+      width: 40px;
+      font-size: 8px;
+    }
 
+    .step {
+      width: 50px;
+    }
+
+    .step::before {
+      width: 50px;
+    }    
   }
 </style>
 <h1>Advisor Career Path</h1>
