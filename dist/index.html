@@ -39,20 +39,20 @@
   .circle {
     display: grid;
     background: green;
-    box-shadow: 3px 6px 3px rgba(0,0,0,.5);
+    box-shadow: 3px 6px 3px rgba(0, 0, 0, .5);
     border-radius: 100px;
     color: white;
     height: 75px;
     width: 75px;
-    line-height: 18px;
     font-size: 16px;
+    line-height: 18px;
     font-weight: bold;
     position: relative;
     place-items: center;
     transition: all 180ms ease-out;
     transform: translateX(10px);
     text-align: center;
-    text-shadow: 2px 1.25px 1px rgba(0,0,0,.6);
+    text-shadow: 2px 1.25px 1px rgba(0, 0, 0, .6);
     word-wrap: break-word;
     z-index: 1;
   }
@@ -95,9 +95,10 @@
 
   @media (max-width: 767px) {
     .circle {
-      height: 40px;
-      width: 40px;
-      font-size: 8px;
+      height: 55px;
+      width: 55px;
+      line-height: initial;
+      font-size: 11px;
     }
 
     .step {
@@ -106,7 +107,7 @@
 
     .step::before {
       width: 50px;
-    }    
+    }
   }
 </style>
 <h1>Advisor Career Path</h1>
@@ -157,12 +158,12 @@
 			</div>
 			<div class="step"></div>
 		</a>
-		<a href="#practicing-advisor" class="step-link" style="margin-bottom: 200px;">
+		<a href="#practicing-partner" class="step-link" style="margin-bottom: 200px;">
 			<div 
 				class="circle" 
 				style="background: radial-gradient(circle at bottom left, #007689, #0191B1);"
 			>
-				Practicing Advisor
+				Practicing Partner
 			</div>
 			<div class="step"></div>
 		</a>

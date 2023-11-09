@@ -1,5 +1,5 @@
 <style>
-  <style>.career-path-steps {
+  .career-path-steps {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -82,66 +82,6 @@
       width: 55px;
       line-height: initial;
       font-size: 11px;
-    }
-
-    `.step {
-      width: 50px;
-    }
-
-    .step::before {
-      width: 50px;
-    }
-
-    `
-  }
-
-  text-shadow: 2px 1.25px 1px rgba(0, 0, 0, .6);
-  word-wrap: break-word;
-  z-index: 1;
-  }
-
-  .step-link:hover .circle {
-    transform: translateX(10px) scale(1.1);
-  }
-
-  .step {
-    background: #bbb;
-    width: 115px;
-    height: 10px;
-    position: relative;
-    margin-top: 12px;
-  }
-
-  .step::before {
-    content: '';
-    display: inline-block;
-    background: #ddd;
-    width: 115px;
-    height: 20px;
-    transform: skewX(-40deg);
-    position: absolute;
-    top: -20px;
-    left: 8px;
-  }
-
-  .step::after {
-    content: '';
-    display: inline-block;
-    background: #999;
-    width: 16px;
-    height: 10px;
-    transform: skewY(-50deg);
-    position: absolute;
-    top: -10px;
-    left: 100%;
-  }
-
-  @media (max-width: 767px) {
-    .circle {
-      height: 40px;
-      width: 40px;
-      font-size: 8px;
-      line-height: initial;
     }
 
     .step {
